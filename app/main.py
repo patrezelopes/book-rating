@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.lifetime import startup
 from app.routers.v1 import review
+
 
 
 def create_app(dependency_overrides: dict = {}) -> FastAPI:
@@ -20,6 +20,7 @@ def create_app(dependency_overrides: dict = {}) -> FastAPI:
     )
     app.dependency_overrides = dependency_overrides
     return app
+
 
 
 app = create_app()

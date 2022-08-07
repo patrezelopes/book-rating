@@ -3,7 +3,6 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.routers.v1 import review
 
 
-
 def create_app(dependency_overrides: dict = {}) -> FastAPI:
     app = FastAPI(
         title="Book Rating API"
@@ -20,7 +19,6 @@ def create_app(dependency_overrides: dict = {}) -> FastAPI:
     )
     app.dependency_overrides = dependency_overrides
     return app
-
 
 
 app = create_app()

@@ -1,0 +1,7 @@
+POSTGRES_HOST=db
+POSTGRES_DB=book-db
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=postgres
+POSTGRES_PORT=5432
+LRU_SIZE=32
+SQLALCHEMY_DATABASE_URL=postgresql://postgres:postgres@db/book_db
